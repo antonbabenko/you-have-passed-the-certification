@@ -21,16 +21,21 @@ function findAndHide(element) {
     items.push(...element.querySelectorAll(qs));
   });
 
-  // console.log("Found these items:", items);
+  // if (items.length > 0) {
+  //   console.log("Searching in:", element);
+  //   console.log("Found these items:", items);
+  // }
 
   items.forEach(function (item) {
     let current = item;
 
     while (current && current.parentNode) {
       if (current.hasAttribute("data-id")) {
-        // console.log("Hiding element: ", current);
-        current.classList.add("visually-hidden")
-        // current.style.border = "10px solid red"
+        if (!current.classList.contains("visually-hidden")) {
+          console.log("Hiding element: ", current);
+          current.classList.add("visually-hidden")
+          // current.style.border = "10px solid red"
+        }
       }
       current = current.parentNode;
     }
