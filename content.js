@@ -38,6 +38,9 @@ function findAndHide(element) {
   });
 }
 
+// Hide during initial phase (sometimes it should help)
+findAndHide(document);
+
 // Select the node that will be observed for mutations
 const targetNode = document.getElementById('voyager-feed');
 
