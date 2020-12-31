@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "You have passed the certification!",
+  "version": "1.0.0",
+  "description": "I just don't want to see posts about it in LinkedIn newsfeed.",
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://www.linkedin.com/feed/*"]
+  }]
+}
