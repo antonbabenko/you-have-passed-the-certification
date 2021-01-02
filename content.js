@@ -5,8 +5,12 @@ function findAndHide(element) {
     // By URLs
     "a[href*='youracclaim.com/badges/']",
     "a[href*='www.credential.net/']",
+    "a[href*='coursera.org/share/']",
+    "a[href*='certificates.cloudbees.com']",
+    "a[href*='educba.com/certificate/']",
     "a[href*='bcert.me/']",
     "a[href*='university.mongodb.com/course_completion/']",
+    "a[href*='verify.acloud.guru']",
 
     // Everything with tags
     "a[href*='linkedin.com/feed/hashtag/?keywords=awscertified']",
