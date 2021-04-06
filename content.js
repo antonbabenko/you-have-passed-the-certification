@@ -4,6 +4,7 @@ function findAndHide(element) {
   let qs = [
     // By URLs
     "a[href*='youracclaim.com/badges/']",
+    "a[href*='credly.com/badges/']",
     "a[href*='www.credential.net/']",
     "a[href*='coursera.org/share/']",
     "a[href*='certificates.cloudbees.com']",
